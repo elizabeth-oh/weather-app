@@ -1,0 +1,79 @@
+h1 {
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 100;
+    text-transform: capitalize;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    margin: 40px auto;
+    padding: 30px 30px;
+    border: 3px solid rgb(250, 247, 229);
+    border-radius: 20px;
+    height: 30%;
+    width: 600px;
+    background: linear-gradient(to bottom, #10151f, #5b7194);
+    box-shadow: 4px 5px 8px 1px rgba(0, 0, 0, 0.75);
+  }
+  
+  .citySearch {
+    float: middle;
+    font-size: 12px;
+  }
+  
+  .tempUnit {
+    text-align: center;
+  }
+  
+  .bold {
+    font-weight: 600;
+    font-size: larger;
+  }
+  
+  .today {
+    padding: 20px 0px 0px 0px;
+  }
+  
+  .hourly {
+    text-align: center;
+    font-size: smaller;
+  }
+  
+  .section {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .week {
+    padding: 15px 0px;
+  }
+  
+  #current-time {
+    font-size: small;
+  }
+  
+  #current-loc-button {
+    font-size: smaller;
+    border-radius: 3px;
+    border-style: offset;
+  }
+  

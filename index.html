@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/8b62cde17a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row header">
+        <div class="col-5" id="current-time">Current Time</div>
+        <div class="col-5">
+          <form class="citySearch" id="search-form">
+            <input
+              type="search"
+              id="cityInput"
+              placeholder="🔍 Search for a city"
+            />
+            <input type="submit" value="Search" />
+          </form>
+        </div>
+        <div class="col-2">
+          <button id="current-loc-button">Current</button>
+        </div>
+        </div>
+      </header>
+      <h1>Paris</h1>
+      <h2>Sunny</h2>
+      <h3>
+        <span id="currentTemp">17</span>
+        <span id="temp-unit">°C</span>
+      </h3>
+      <div class="tempUnit">
+        <a href="" id="celsius">C</a> |
+        <a href="" id="fahrenheit">F</a>
+      </div>
+      <div class="row today">
+        <div class="col-10 bold">Today</div>
+        <div class="col-1 bold">23</div>
+        <div class="col-1">12</div>
+      </div>
+      <hr class="bg border-1 border-top border" />
+      <div class="row hourly">
+        <div class="col bold">Now</div>
+        <div class="col">12</div>
+        <div class="col">13</div>
+        <div class="col">14</div>
+        <div class="col">15</div>
+        <div class="col">16</div>
+        <div class="col">17</div>
+        <div class="col">18</div>
+        <div class="col">19</div>
+      </div>
+      <div class="row hourly icons">
+        <div class="col">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="col">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="col">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="col">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="col">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="col">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="col">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="col">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="col">
+          <i class="fas fa-sun"></i>
+        </div>
+      </div>
+      <div class="row hourly temp">
+        <div class="col bold">20°C</div>
+        <div class="col">21°C</div>
+        <div class="col">21°C</div>
+        <div class="col">22°C</div>
+        <div class="col">23°C</div>
+        <div class="col">22°C</div>
+        <div class="col">22°C</div>
+        <div class="col">21°C</div>
+        <div class="col">20°C</div>
+      </div>
+      <hr class="bg border-1 border-top border" />
+      <div class="row week">
+        <div class="col-6">Friday</div>
+        <div class="col-4 icons">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="col-1 bold">25</div>
+        <div class="col-1">16</div>
+      </div>
+      <div class="row week">
+        <div class="col-6">Saturday</div>
+        <div class="col-4 icons">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="col-1 bold">24</div>
+        <div class="col-1">15</div>
+      </div>
+      <div class="row week">
+        <div class="col-6">Sunday</div>
+        <div class="col-4 icons">
+          <i class="fas fa-wind"></i>
+        </div>
+        <div class="col-1 bold">18</div>
+        <div class="col-1">12</div>
+      </div>
+      <div class="row week">
+        <div class="col-6">Monday</div>
+        <div class="col-4 icons">
+          <i class="fas fa-wind"></i>
+        </div>
+        <div class="col-1 bold">15</div>
+        <div class="col-1 icons">8</div>
+      </div>
+      <div class="row week">
+        <div class="col-6">Tuesday</div>
+        <div class="col-4 icons">
+          <i class="fas fa-cloud-sun"></i>
+        </div>
+        <div class="col-1 bold">20</div>
+        <div class="col-1">12</div>
+      </div>
+      <div class="row week">
+        <div class="col-6">Wednesday</div>
+        <div class="col-4 icons">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="col-1 bold">20</div>
+        <div class="col-1">15</div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
